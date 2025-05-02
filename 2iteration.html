@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognify – Iteration 2</title>
+    <link rel="icon" href="img/app_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="nav-bar">
+            <a href="index.html">Project Overview</a>
+            <a href="1iteration.html">Iteration 1</a>
+            <a href="2iteration.html">Iteration 2</a>
+            <a href="3iteration.html">Iteration 3</a>
+        </nav>
+    </header>
+
+    <h1>Cognify – Iteration 2</h1>
+    <img src="img/app_icon.png" alt="App logo" class="logo">
+
+    <h2>App Flow: Permissions and Launch Behavior</h2>
+    <p style="text-align: center;">
+        When the app launches, it automatically redirects the user to the settings screen to enable the required permission:  
+        <strong>"Display over other apps."</strong>  
+        Once this permission is granted, the user must press the back button twice to return to the app.
+    </p>
+
+    <table>
+        <tr>
+            <th>Settings: First App Launch</th>
+            <th>Settings: Toggle Option Screen</th>
+            <th>Settings: After allowing</th>
+        </tr>
+        <tr>
+            <td><img src="img/2Iteration/2Iteration settings denied.jpg" alt="First Open" class="iteration-image"></td>
+            <td><img src="img/2Iteration/2Iteration settings tugle.jpg" alt="Toggle Option" class="iteration-image"></td>
+            <td><img src="img/2Iteration/2Iteration settings allowed.jpg" alt="allowed" class="iteration-image"></td>
+        </tr>
+        <tr>
+            <td>
+                When the app is opened for the first time (or if the permission has not been granted), the user is automatically redirected to this settings screen. From here, they must select the app (now renamed to <strong>Cognito</strong>) to access the toggle for the required permission.
+
+                <br><strong>Note:</strong> In the screenshot, the app currently has the permission set to "Denied."
+            </td>
+            <td>
+                After selecting the app, the user can enable the "Display over other apps" permission to allow pop-up functionality.
+            </td>
+            <td>
+                After pressing the back button once, the user can see that the app now shows "Allowed" beneath it. If they press back again, they will return to the app.
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+    <h2>Pop-Up Behavior in Chrome</h2>
+
+    <table>
+        <tr>
+            <th>Home Screen: "Activate Pop-Up" Button</th>
+            <th>After Clicking "Activate Pop-Up"</th>
+            <th>Pop-Up in Chrome</th>
+        </tr>
+        <tr>
+            <td><img src="img/2Iteration/2Iteration home activate pop-up.jpg" alt="Activate Pop-Up Button" class="iteration-image"></td>
+            <td><img src="img/2Iteration/2Iteration home no pop-up.jpg" alt="After Clicking Activate Pop-Up" class="iteration-image"></td>
+            <td><img src="img/2Iteration/2Iteration chrome.jpg" alt="After Clicking the Pop-Up" class="iteration-image"></td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Note:</strong> The home screen now shows an "Activate Pop-Up" button.
+            </td>
+            <td>
+                <strong>Note:</strong> After clicking "Activate Pop-Up," the button disappears. If the app is force-closed and reopened, the button will appear again.
+            </td>
+            <td>
+                <strong>Note:</strong> The pop-up appears anywhere on the user's phone 15 seconds after pressing the "Activate Pop-Up" button.
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    
+
+</body>
+</html>
