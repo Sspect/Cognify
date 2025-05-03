@@ -21,6 +21,14 @@
     <h1>Cognify – Iteration 2</h1>
     <img src="img/app_icon.png" alt="App logo" class="logo">
 
+    <h1>
+        Iteration 2 was completed in 
+        <a href="https://github.com/GamerForFunn/Bachelor_Project_CognitiveApp/commit/cae2cf9ef77b07d5945c36fe9a0f2c9a5ea639b0" target="_blank">
+            this commit
+        </a> on April 2, 2025.
+    </h1>
+
+    <br>
     <h2>App Flow: Permissions and Launch Behavior</h2>
     <p style="text-align: center;">
         When the app launches, it automatically redirects the user to the settings screen to enable the required permission:  
@@ -33,11 +41,18 @@
             <th>Settings: First App Launch</th>
             <th>Settings: Toggle Option Screen</th>
             <th>Settings: After allowing</th>
+            <th>Video of Launch and pop-up behavior</th>
         </tr>
         <tr>
             <td><img src="img/2Iteration/2Iteration settings denied.jpg" alt="First Open" class="iteration-image"></td>
             <td><img src="img/2Iteration/2Iteration settings tugle.jpg" alt="Toggle Option" class="iteration-image"></td>
             <td><img src="img/2Iteration/2Iteration settings allowed.jpg" alt="allowed" class="iteration-image"></td>
+            <td>
+                <video muted playsinline controls class="iteration-image">
+                    <source src="vid/2Iteration/2Iteration Launch and pop-up behavior.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
         </tr>
         <tr>
             <td>
@@ -50,6 +65,14 @@
             </td>
             <td>
                 After pressing the back button once, the user can see that the app now shows "Allowed" beneath it. If they press back again, they will return to the app.
+            </td>
+            <td>
+                This video shows the app behavior after installation or when permission isn’t granted.
+The app redirects the user to settings to allow "Display over other apps."
+Note: Due to a bug, the app always sends the user back to settings once, even after permission is granted — but not again after that.
+Tapping "Activate Pop-Up" triggers a pop-up after 15 seconds.
+
+
             </td>
         </tr>
     </table>

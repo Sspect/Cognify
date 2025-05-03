@@ -137,6 +137,20 @@ iframe {
     border-radius: 12px;
 }
 
+video.iteration-image {
+    outline: 6px solid #4CAF50;
+}
+
+
+.media-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Makes it mobile-friendly */
+}
+
 
 
 
