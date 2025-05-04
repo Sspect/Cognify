@@ -99,9 +99,9 @@ This redirect also occurs if the permission has been turned off — but only aft
             </td>
             <td>
                 This video shows the app behavior after installation or when permission isn’t granted.
-The app redirects the user to settings to allow "Display over other apps."<br>
-Tapping "Activate Pop-Up" triggers a pop-up after 15 seconds.
-<br><strong>Note:</strong> Due to a bug, the app always sends the user back to settings once, even after permission is granted — but not again after that.
+                The app redirects the user to settings to allow "Display over other apps."<br>
+                Tapping "Activate Pop-Up" triggers a pop-up after 15 seconds.
+                <br><strong>Note:</strong> Due to a bug, the app always sends the user back to settings once, even after permission is granted — but not again after that.
 
 
 
@@ -111,7 +111,144 @@ Tapping "Activate Pop-Up" triggers a pop-up after 15 seconds.
 
     <br><br>
 
+
     
+    <h2>Game Difficulty Scaling</h2>
+
+<table>
+    <tr>
+        <th>Game 1</th>
+        <th>Game 2</th>
+        <th>Game 3</th>
+    </tr>
+    <tr>
+        <td>
+            <video muted playsinline controls class="iteration-image portrait-video">
+                <source src="vid/2Iteration/2Iteration difficulty scaling game 1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </td>
+        <td>
+            <video muted playsinline controls class="iteration-image portrait-video">
+                <source src="vid/2Iteration/2Iteration difficulty scaling game 2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </td>
+        <td>
+            <video muted playsinline controls class="iteration-image portrait-video">
+                <source src="vid/2Iteration/2Iteration difficulty scaling game 3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Game 1 uses the difficulty setting as input in two formulas to scale the game:
+            <br>
+            <img src="img/2Iteration/amount formula.png" class="table-image" alt="Amount formula">
+            <img src="img/2Iteration/range formula.png" class="table-image" alt="Range formula">
+            <br>See how it's implemented in Kotlin: 
+            <p>
+                <a href="https://github.com/GamerForFunn/Bachelor_Project_CognitiveApp/blob/2Iteration/app/src/main/java/com/example/cognitiveexercisesapp/ui/games/game1/Game1Config.kt" target="_blank">Game1Config.kt</a>
+            </p>
+        </td>
+        <td>
+            <p>
+                Game 2 uses the difficulty setting to determine one of three game modes:
+            </p>
+        
+            
+                <strong>Easy</strong> – difficulty between <strong>1–32</strong><br>
+                <strong>Medium</strong> – difficulty between <strong>33–65</strong><br>
+                <strong>Hard</strong> – difficulty between <strong>66–100</strong><br>
+            
+        
+            <p>
+                This logic is handled in the Kotlin code using a <code>when</code> statement.
+                You can view the full implementation here:
+            </p>
+        
+            <p>
+                <a href="https://github.com/GamerForFunn/Bachelor_Project_CognitiveApp/blob/2Iteration/app/src/main/java/com/example/cognitiveexercisesapp/ui/games/game2/Game2Config.kt" target="_blank">
+                    Game2Config.kt
+                </a>
+            </p>
+        </td>
+        <td>
+            <p>
+                No difficulty scaling implemented
+            </p>
+        </td>
+    </tr>
+</table>
+<br><br>
+
+<h2>App Flow: Wrong answer and Game completed</h2>
+
+<table>
+    <tr>
+        <th>Wrong answer</th>
+        <th>Game completed</th>
+    </tr>
+    <tr>
+        <td>
+            <video muted playsinline controls class="iteration-image portrait-video">
+                <source src="vid/2Iteration/2Iteration wrong answer.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </td>
+        <td>
+            <video muted playsinline controls class="iteration-image portrait-video">
+                <source src="vid/2Iteration/2Iteration game compleate.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          
+        </td>
+        <td>
+            
+        </td>
+    </tr>
+</table>
+
+    
+
+<br><br>
+
+<h2>Below are additional UI components of the app</h2>
+
+<table>
+    <tr>
+        <th>Wrong answer</th>
+        <th>Game completed</th>
+        <th>Diagram</th>
+    </tr>
+    <tr>
+        <td>
+            <img src="img/2Iteration/2Iteration wrong answer.jpg" alt="" class="iteration-image">
+        </td>
+        <td>
+            <img src="img/2Iteration/2Iteration game done.jpg" alt="" class="iteration-image">
+        </td>
+        <td>
+            <img src="img/2Iteration/2Iteration diagram.jpg" alt="" class="iteration-image">
+        </td>
+    </tr>
+    <tr>
+        <td>
+          
+        </td>
+        <td>
+            
+        </td>
+        <td>
+            
+        </td>
+    </tr>
+</table>
 
 </body>
 </html>

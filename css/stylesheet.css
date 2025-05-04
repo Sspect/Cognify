@@ -141,6 +141,14 @@ video.iteration-image {
     outline: 6px solid #4CAF50;
 }
 
+.table-image {
+    max-height: 100px;
+    width: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
 
 .media-row {
     display: flex;
