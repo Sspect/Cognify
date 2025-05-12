@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognify – Iteration 3</title>
+    <link rel="icon" href="img/app_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="nav-bar">
+            <a href="index.html">Project Overview</a>
+            <a href="1iteration.html">Iteration 1</a>
+            <a href="2iteration.html">Iteration 2</a>
+            <a href="3iteration.html">Iteration 3</a>
+            <a href="futureDevelopment.html">Future Development</a>
+        </nav>
+    </header>
+
+    <h1>Cognify – Iteration 3</h1>
+    <img src="img/app_icon.png" alt="App logo" class="logo">
+    
+    <h2>Overview of Iteration 3</h2>
+
+    <div class="text-box">
+        <p>In Iteration 3, we added new functionality to make the app more complete and professional. This iteration was particularly challenging, as the work moved beyond standard app development tasks and required deeper Android system knowledge, which proved difficult due to our limited experience and time.</p>
+    </div>
+    
+
+
+
+    
+    <table>
+        <tr>
+            <th>Iteration 2 Home/Games</th>
+            <th>Iteration 3 Home</th>
+            <th>Iteration 3 Games</th>
+        </tr>
+        <tr>
+            <td><img src="img/2Iteration/2Iteration home activate pop-up.jpg" alt="2Iteration home activate" class="iteration-image"></td>
+            <td><img src="img/3Iteration/3Iteration home disabled no.jpg" alt="disabled no" class="iteration-image"></td>
+            <td><img src="img/3Iteration/3Iteration games eng.jpg" alt="disabled no" class="iteration-image"></td>
+        </tr>
+        <tr>
+            <td>
+                <p>Old home UI, Included games</p>
+            </td>
+            <td>
+                <p>
+                    We brought back the language option from iteration 1, there is also two permission toggle buttons that sends the user to settings.
+                </p>
+            </td>
+            <td>
+                <p>
+                    Games are separated from the home screen
+                </p>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+    <h2>Permission Access Flow: English and Norwegian</h2>
+    <table>
+        <tr>
+            <th>Deactivated English</th>
+            <th>Deactivated Norwegian</th>
+            <th>Activated English</th>
+            <th>Activated Norwegian</th>
+            
+        </tr>
+        <tr>
+            <td><img src="img/3Iteration/3Iteration home disabled eng.jpg" alt="disabled eng" class="iteration-image"></td>
+            <td><img src="img/3Iteration/3Iteration home disabled no.jpg" alt="disabled no" class="iteration-image"></td>
+            <td><img src="img/3Iteration/3Iteration home enabled eng.jpg" alt="enabled eng" class="iteration-image"></td>
+            <td><img src="img/3Iteration/3Iteration home enabled no.jpg" alt="enabled no" class="iteration-image"></td>
+        </tr>
+    </table>
+    <br><br>
+
+
+    <h2>Comparison of Game Info Screens: Iteration 2 vs Iteration 3 (Norwegian)</h2>
+
+    <table>
+        <tr>
+            <th>Game 1 Iteration 3</th>
+            <th>Game 1 Iteration 2</th>
+            <th>Game 2 Iteration 3</th>
+            <th>Game 2 Iteration 2</th>
+            <th>Game 3 Iteration 3</th>
+            <th>Game 3 Iteration 2</th>
+        </tr>
+        <tr>
+            <td><img src="img/3Iteration/3Iteration game1 no.jpg" alt="game1 no" class="iteration-image"></td>
+            <td><img src="img/3Iteration/old game1.jpg" alt="game1 eng" class="iteration-image"></td>
+            <td><img src="img/3Iteration/3Iteration game2 no.jpg" alt="game2 no" class="iteration-image"></td>
+            <td><img src="img/3Iteration/old game2.jpg" alt="game1 eng" class="iteration-image"></td>
+            <td><img src="img/3Iteration/3Iteration game3 no.jpg" alt="game3 no" class="iteration-image"></td>
+            <td><img src="img/3Iteration/old game3.jpg" alt="game1 eng" class="iteration-image"></td>
+        </tr>
+    </table>
+
+    <h2>Game info screens</h2>
+    <table>
+        <tr>
+            <th>Game 1 English</th>
+            <th>Game 1 Norwegian</th>
+            <th>Game 2 English</th>
+            <th>Game 2 Norwegian</th>
+            <th>Game 3 English</th>
+            <th>Game 3 Norwegian</th>
+        </tr>
+        <tr>
+            <td><img src="img/3Iteration/3Iteration game1 eng.jpg" alt="game1 eng" class="iteration-image"></td>
+            <td><img src="img/3Iteration/3Iteration game1 no.jpg" alt="game2 eng" class="iteration-image"></td>
+            <td><img src="img/3Iteration/3Iteration game2 eng.jpg" alt="game3 eng" class="iteration-image"></td>
+            <td><img src="img/3Iteration/3Iteration game2 no.jpg" alt="game3 eng" class="iteration-image"></td>
+            <td><img src="img/3Iteration/3Iteration game3 eng.jpg" alt="game3 eng" class="iteration-image"></td>
+            <td><img src="img/3Iteration/3Iteration game3 eng.jpg" alt="game3 eng" class="iteration-image"></td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <h3>1. Usage Access API Integration</h3>
+    <p>
+        We implemented Android’s <strong>Usage Access API</strong> to detect app usage history, replacing older deprecated methods like <code>getRecentTasks()</code>.
+        This API allows us to access detailed usage statistics such as:
+    </p>
+    <ul>
+        <li>Last time an app was used</li>
+        <li>Total time an app was in the foreground (daily, weekly, monthly, yearly)</li>
+        <li>Events when apps move to foreground or background</li>
+        <li>Configuration changes (e.g., device rotation)</li>
+    </ul>
+    <p>
+        <strong>Retention of data:</strong>  
+        Daily (7 days), Weekly (4 weeks), Monthly (6 months), Yearly (2 years).
+    </p>
+    <p>
+        However, implementing this was challenging. Unlike traditional app coding, accessing system-level services like Usage Stats involves special permissions, background services, and interacting with Android’s security policies.
+        Due to limited time and experience, fully completing this integration was difficult.
+    </p>
+    
+    <h3>2. Bottom Navigation View</h3>
+    <p>
+        We added a <strong>BottomNavigationView</strong> to improve navigation across the app.
+        Cognify now has two main screens:
+    </p>
+    <ul>
+        <li><strong>Home:</strong> The settings screen</li>
+        <li><strong>Games:</strong> A screen listing the three available cognitive games</li>
+    </ul>
+    
+    <h3>3. Improved Language Options</h3>
+    <p>
+        The language selector (Norwegian and English) was expanded to cover the entire app — including all screens, buttons, and labels.
+        <br>
+        <strong>Exception:</strong> The pop-up notification still uses the system-level <code>SYSTEM_ALERT_WINDOW</code> overlay, which is separate from the app's normal UI and harder to localize.
+    </p>
+    
+    <h2>Challenges in Iteration 3</h2>
+    
+    <p>
+        Compared to earlier iterations, Iteration 3 involved more complex Android system features, which were unfamiliar to us as Bachelor students. 
+        Specifically, working with system-level services required understanding concepts such as:
+    </p>
+    <ul>
+        <li><strong>WorkManager</strong> – for managing background tasks</li>
+        <li><strong>Notifications and Notification Channels</strong> – to deliver user alerts</li>
+        <li><strong>Post Notifications Permission</strong> – mandatory in Android 13+</li>
+        <li><strong>Overlay Permissions</strong> – for drawing over other apps</li>
+        <li><strong>System Alert Windows</strong> – managing overlays and pop-ups</li>
+    </ul>
+    
+    <p>
+        These concepts introduced new technical challenges compared to "normal" app coding, where we were more familiar with layouts, activities, and view models. 
+        Working at the system level required a shift in thinking, more research, and handling complex permission flows.
+    </p>
+
+
+
+
+    
+    
+</body>
+</html>
