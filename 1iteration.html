@@ -1,139 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cognify – Iteration 1</title>
-    <link rel="icon" href="img/app_icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/stylesheet.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cognify – First Iteration</title>
+  <link rel="icon" href="img/app_icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <nav class="nav-bar">
-            <a href="index.html">Project Overview</a>
-            <a href="1iteration.html">Iteration 1</a>
-            <a href="2iteration.html">Iteration 2</a>
-            <a href="3iteration.html">Iteration 3</a>
-            <a href="futureDevelopment.html">Future Development</a>
-        </nav>
-    </header>
+  <header class="main-header">
+    <nav class="nav-bar">
+      <a href="index.html">Project Overview</a>
+      <a href="1iteration.html">First Iteration</a>
+      <a href="2iteration.html">Second Iteration</a>
+      <a href="3iteration.html">Third Iteration</a>
+
+    </nav>
+  </header>
+
+  <h1>Cognify – First Iteration</h1>
+  <a href="index.html"><img src="img/app_icon.png" alt="App logo" class="logo"></a>
+  <h1>
+    First Iteration was completed in 
+    <a href="https://github.com/GamerForFunn/Bachelor_Project_CognitiveApp/commit/c01a9d5f17597fbd62ee0a0de22b98516223d752" target="_blank">
+      this commit
+    </a> on March 10, 2025.
+</h1>
+
+
+<table>
+    <tr>
+        <td style="border: none;"></td>
+        <td style="border: none; vertical-align: top;">
+            <!-- Intro Text -->
+            <h2>Overview</h2>
+            <p style="text-align: center;">
+                In this early version of Cognify, core UI elements were introduced and basic game functionality was established. Language settings only affected info screens, and only Game 1 responded to the difficulty setting. Dark theme was not supported.
+            </p>
+        </td>
+        <td style="border: none;">
+            <!-- Home Screen -->
+            <h2>Home Screen</h2>
+            <video autoplay muted loop playsinline class="iteration-image">
+                <source src="vid/1Iteration/1Iteration home.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </td>
+        <td style="border: none;"></td>
+    </tr>
+</table>
+
+  
+
+
+
+<!-- Game 1 -->
+<h2>Game 1 </h2>
+    <table>
+        <tr>
+            <th>
+                Info Screen (English)
+            </th>
+            <th>
+                Info Screen (Norwegian)
+            </th>
+            <th>
+                Video
+            </th>
+            <th>
+                Image
+            </th>
+            <th>
+                Difficulty
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="img/1Iteration/1Iteration game1 intro.jpg" alt="" class="iteration-image">
+            </td>
+            <td>
+                <img src="img/1Iteration/1Iteration game1 intro no.jpg" alt="" class="iteration-image">
+            </td>
+            <td>
+                <video muted playsinline controls class="iteration-image"><source src="vid/1Iteration/1Iteration game 1.mp4" type="video/mp4"></video>
+            </td>
+            <td>
+                <img src="img/1Iteration/1Iteration game1.jpg" alt="" class="iteration-image">
+            </td>
+            <td>
+                Game 1 uses the difficulty setting as input in two formulas to scale the game:
+                <br>
+                <img src="img/2Iteration/amount formula.png" class="table-image" alt="Amount formula" style="max-width: 90%; height: auto;">
+                <img src="img/2Iteration/range formula.png" class="table-image" alt="Range formula" style="max-width: 90%; height: auto;">
+                <br>See how it's implemented in Kotlin: 
+                <p>
+                    <a href="https://github.com/GamerForFunn/Bachelor_Project_CognitiveApp/blob/2Iteration/app/src/main/java/com/example/cognitiveexercisesapp/ui/games/game1/Game1Config.kt" target="_blank">Game1Config.kt</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <!-- Game 2 -->
+    <h2>Game 2 </h2>
+    <table>
+        <tr>
+            <th>
+                Info Screen (English)
+            </th>
+            <th>
+                Info Screen (Norwegian)
+            </th>
+            <th>
+                Video
+            </th>
+            <th>
+                Image
+            </th>
+            <th>
+                Difficulty
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="img/1Iteration/1Iteration game2 intro.jpg" alt="" class="iteration-image">
+            </td>
+            <td>
+                <img src="img/1Iteration/1Iteration game2 intro no.jpg" alt="" class="iteration-image">
+            </td>
+            <td>
+                <video muted playsinline controls class="iteration-image"><source src="vid/1Iteration/1Iteration game2.mp4" type="video/mp4"></video>
+            </td>
+            <td>
+                <img src="img/1Iteration/1Iteration game2.jpg" alt="" class="iteration-image">
+            </td>
+            <td>
+                No difficulty implemented
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <!-- Game 3 -->
+    <h2>Game 3 </h2>
+    <table>
+        <tr>
+            <th>
+                Info Screen (English)
+            </th>
+            <th>
+                Info Screen (Norwegian)
+            </th>
+            <th>
+                Video
+            </th>
+            <th>
+                Image
+            </th>
+            <th>
+                Difficulty
+            </th>
+        </tr>
+
+        <tr>
+            <td>
+                <img src="img/1Iteration/1Iteration game3 intro.jpg" alt="" class="iteration-image">
+            </td>
+            <td>
+                <img src="img/1Iteration/1Iteration game3 intro no.jpg" alt="" class="iteration-image">
+            </td>
+            <td>
+                <video muted playsinline controls class="iteration-image"><source src="vid/1Iteration/1Iteration game3.mp4" type="video/mp4"></video>
+            </td>
+            <td>
+                <img src="img/1Iteration/1Iteration game3.jpg" alt="" class="iteration-image">
+            </td>
+            <td>
+                Consists of three rounds, each presenting increasingly challenging words. The difficulty slider does not affect the words
+            </td>
+        </tr>
+    </table>
+
+
     
-    <h1>Cognify – Iteration 1</h1>
-    <img src="img/app_icon.png" alt="App logo" class="logo">
-    <h1>
-        Iteration 1 was completed in 
-        <a href="https://github.com/GamerForFunn/Bachelor_Project_CognitiveApp/commit/c01a9d5f17597fbd62ee0a0de22b98516223d752" target="_blank">this commit</a> on March 10, 2025.
-    </h1>
 
-
-    <h2>Below, you can see the home screen and the game info screens that appear when clicking on Game 1, Game 2, or Game 3.</h2>
-    <p style="text-align: center;">Note: In this iteration, the language setting only affects the game info screens — all other text remains in English, except for the in-game text in Game 3. The difficulty option is only functional for Game 1. Additionally, dark theme is not supported.</p>
-
-    <table>
-        <tr><th>Home Page</th><th>Game 1</th><th>Game 2</th><th>Game 3</th></tr>
-        <tr>
-            <td>
-
-                <video autoplay muted loop playsinline class="iteration-image">
-                    <source src="vid/1Iteration/1Iteration home.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                  
-            
-            
-            
-            </td>
-            <td><img src="img/1Iteration/1Iteration game1 intro.jpg" alt="" class="iteration-image"></td>
-            <td><img src="img/1Iteration/1Iteration game2 intro.jpg" alt="" class="iteration-image"></td>
-            <td><img src="img/1Iteration/1Iteration game3 intro.jpg" alt="" class="iteration-image"></td>
-        </tr>
-    </table>
-    <table>
-        <tr><th>Game 1 Norwegian</th><th>Game 2 Norwegian</th><th>Game 3 Norwegian</th></tr>
-        <tr>
-            <td><img src="img/1Iteration/1Iteration game1 intro no.jpg" alt="" class="iteration-image"></td>
-            <td><img src="img/1Iteration/1Iteration game2 intro no.jpg" alt="" class="iteration-image"></td>
-            <td><img src="img/1Iteration/1Iteration game3 intro no.jpg" alt="" class="iteration-image"></td>
-        </tr>
-    </table>
-    <br><br>
-    <br><br>
-
-
-
-    <h2>Games</h2>
-
-    <table>
-        <tr><th>Game 1</th><th>Game 2</th><th>Game 3</th></tr>
-        <tr>
-            <td>
-                <video muted playsinline controls class="iteration-image">
-                    <source src="vid/1Iteration/1Iteration game 1.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </td>
-            <td>
-                <video muted playsinline controls class="iteration-image">
-                    <source src="vid/1Iteration/1Iteration game2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </td>
-            <td>
-                <video muted playsinline controls class="iteration-image">
-                    <source src="vid/1Iteration/1Iteration game3.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                
-            </td>
-        </tr>
-    </table>
-    <br><br>
-
-
-    <h2>Below are additional UI components of the app</h2>
-
-    <table>
-        <tr><th>Wrong answer</th><th>Score (after game complete)</th><th>Comparison chart (after Score)<th>Doctor's note (after comparison chart)</th></tr>
-        <tr>
-            <td><img src="img/1Iteration/1Iteration wrong answer.jpg" alt="" class="iteration-image"></td>
-            <td><img src="img/1Iteration/1Iteration score.jpg" alt="" class="iteration-image"></td>
-            <td><img src="img/1Iteration/1Iteration Comparison chart.jpg" alt="" class="iteration-image"></td>
-            <td><img src="img/1Iteration/1Iteration dr.jpg" alt="" class="iteration-image"></td>
-        </tr>
-        
-        
-        <tr>
-            <td>
-                <strong style="text-align: center;">Issues on the "Wrong Answer" screen:</strong>
-                <p style="text-align: left;">
-                    – Buttons are misaligned <br>
-                    – The exit button crashes the app <br>
-                    – Some text is not properly aligned
-                </p>
-            </td>
-            <td>
-                <strong>Issues on the "Score" Screen:</strong>
-                <p style="text-align: left;">
-                    – Time always shows 221<br>
-                    – Wrong answers always show as 3<br>
-                    – Difficulty level always shows 200<br>
-                    – Score is always 90
-                </p>
-            </td>
-            <td>Note: All values are always set to 436</td>
-            <td>Note: Value are always set to 436</td>
-            
-        </tr>
-
-        
-        
-
-
-
-    </table>
-
-
+  <!-- Additional UI Components -->
+  <h2>Additional UI Components</h2>
+  <table>
+    <tr>
+      <th>Wrong Answer</th>
+      <th>Score Summary</th>
+      <th>Comparison Chart</th>
+      <th>Doctor’s Note</th>
+    </tr>
+    <tr>
+      <td><img src="img/1Iteration/1Iteration wrong answer.jpg" alt="" class="iteration-image"></td>
+      <td><img src="img/1Iteration/1Iteration score.jpg" alt="" class="iteration-image"></td>
+      <td><img src="img/1Iteration/1Iteration Comparison chart.jpg" alt="" class="iteration-image"></td>
+      <td><img src="img/1Iteration/1Iteration dr.jpg" alt="" class="iteration-image"></td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Issues:</strong><br>
+        – Misaligned buttons<br>
+        – Exit button crashes the app<br>
+        – Text misalignment
+      </td>
+      <td>
+        <strong>Issues:</strong><br>
+        – Time always shows "221"<br>
+        – Wrong answers always show "3"<br>
+        – Difficulty always shows "200"<br>
+        – Score always "90"
+      </td>
+      <td><em>Note: All values were hardcoded to 436</em></td>
+      <td><em>Note: Same as chart – values are hardcoded to 436</em></td>
+    </tr>
+  </table>
 
 </body>
 </html>
